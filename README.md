@@ -1,0 +1,1 @@
+# Wine-Quality-and-Disease-Prediction
