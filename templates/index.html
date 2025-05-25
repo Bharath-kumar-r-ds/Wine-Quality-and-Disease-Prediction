@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Checker</title>
+</head>
+<body>
+        <h1>Wine Checker</h1>
+        <form action="{{ url_for('predict')}}"method="post">
+            <label for="fa">Fixed Acidity: </label><br> <input type="text" name="fa" id="1"><br>
+            <label for="va">Volatile Acidity: </label> <br><input type="text" name="va" id="2"><br>
+            <label for="ca">Citric Acid: </label> <br><input type="text" name="ca" id="3"><br>
+            <label for="cl">Chlorides: </label><br> <input type="text" name="cl" id="4"><br>
+            <label for="fsd">Free Sulphur dioxide: </label> <br><input type="text" name="fsd" id="5"><br>
+            <label for="tsd">Total Sulphur dioxide: </label><br> <input type="text" name="tsd" id="6"><br>
+            <label for="den">Density: </label><br> <input type="text" name="den" id="7"><br>
+            <label for="ph">pH: </label> <br><input type="text" name="ph" id="8"><br>
+            <label for="sl">Sulphates: </label> <br><input type="text" name="sl" id="9"><br>
+            <label for="ql">Alcohol: </label><br> <input type="text" name="ql" id="10"><br>
+            <label for="algo">Select Algo: </label><br> <input type="number" name="algo" id="11"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <h1>{{ prediction_text }} 
+            <br>
+            <input type="button" value="Check Grapevine Disease" id="Disease">
+            <input type="button" value="Check Grapevine Type" id="Plant">
+        </h1>
+
+</body>
+</html>
